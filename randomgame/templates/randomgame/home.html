@@ -1,0 +1,38 @@
+{% load static%}
+<!doctype html>
+<html lang = 'kor'>
+    <head>
+        <meta charset="utf-8">
+        <title>home</title>
+        <link rel = "stylesheet" type="text/css" href="{% static 'randomgame/css/style.css' %}">
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <h1>랜덤게임~ 랜덤게임~</h1>
+                <h2>서강이가 좋아하는 랜덤게임</h2>
+                <img src="{% static 'randomgame/image/alcohol.png' %}">
+                        
+            </div>
+            <div id="container">
+                <h3>과 행사에서도 동아리 모임에서도 꼭 필요한 술게임</h3>
+                <h4>우리 모두 다같이 술게임을 배워봐요!</h4>
+                <h5><a href="{% url 'new' %}">새로운 게임을 추가해주세요</a></h5>
+            </div>
+        </header>
+        <main>
+            {% for post in posts_list %}
+            <div id="all">
+                <h6> {{ post.title }} </h6>
+                <div id="post">
+                    <p> {{ post.body|linebreaks }} </p></div>
+            </div>
+            <hr>
+            {% endfor %}
+        </main>
+        <footer>
+            <div id='warn'>과도한 음주는 건강에 해롭습니다.</div>
+        </footer>
+    </body>
+</html>
+

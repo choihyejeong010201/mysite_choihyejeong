@@ -1,0 +1,18 @@
+{% load static%}
+<!doctype html>
+<html lang = 'kor'>
+    <head>
+        <meta charset="utf-8">
+        <title>new</title>
+        <link rel = "stylesheet" type="text/css" href="{% static 'randomgame/css/new.css' %}">
+    </head>
+    <body>
+        <header>
+            <h1>나만의 게임을 소개해주세요</h1></header>
+        <main>
+            <form method="POST" class="post-form"> {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Save</button>
+            </form>            
+        </main>
+

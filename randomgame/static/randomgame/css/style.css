@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    font-family: THE봉숭아틴트;
+}
+#top{
+    text-align: center;
+}
+
+h1{
+    height: 50px;
+    font-size: 45px;
+}
+h2{
+    height: 50px;
+    font-size: 45px;
+}
+
+h3{
+    height: fit-content;
+    width: fit-content;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 4px,solid,gray;
+}
+h4{
+    height: fit-content;
+    width: fit-content;
+    font-size: 30px;
+    text-align: center;
+}
+h5{
+    text-align: right;
+}
+
+h6{
+    width: 240px;
+    height: 40px;
+    padding: 2px;
+    font-size: 25px;
+    border-bottom: solid 2px steelblue;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+#all{
+    width: auto;
+    height: auto;
+    border-color: steelblue;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    
+}
+
+#post{
+    margin-top: 6px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#warn{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
+}
